@@ -1,0 +1,106 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파이썬 한국 사용자 모임</title>
+  
+
+<link rel="stylesheet" href="/static/css/dist/styles.css">
+
+
+
+
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+  <!-- 내비게이션 -->
+  <nav class="bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- 로고 + 텍스트 타이틀 -->
+        <div class="flex flex-row items-center space-x-4 w-auto">
+          <a class="navbar-brand" href="/">
+            <img class="h-12 mx-auto md:mx-0" src="/static/pythonkr/pythonkr-badge.png" alt="Python Korea Logo"/>
+          </a>
+          <h1 class="text-xl font-bold text-gray-800 mt-2 md:mt-0 text-center md:text-left">
+            파이썬 한국 사용자 모임
+          </h1>
+        </div>
+        <!-- 내비게이션 -->
+        <div class="hidden md:flex space-x-4">
+          
+          <a class="text-gray-600 hover:text-gray-800" href="/about/">About</a>
+          
+          <a class="text-gray-600 hover:text-gray-800" href="/activity/">Activity</a>
+          
+          <a class="text-gray-600 hover:text-gray-800" href="/support/">Support</a>
+          
+          <a class="text-gray-600 hover:text-gray-800" href="/events/">Events</a>
+          
+        </div>
+        <!-- 모바일 메뉴 버튼 -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 모바일 메뉴 -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      
+      <a class="block py-2 text-gray-600 hover:bg-gray-200" href="/about/">About</a>
+      
+      <a class="block py-2 text-gray-600 hover:bg-gray-200" href="/activity/">Activity</a>
+      
+      <a class="block py-2 text-gray-600 hover:bg-gray-200" href="/support/">Support</a>
+      
+      <a class="block py-2 text-gray-600 hover:bg-gray-200" href="/events/">Events</a>
+      
+    </div>
+  </nav>
+
+  <!-- 메인 -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <div class="prose">
+      <h2 data-block-key="bs4no"><b>활동내역</b></h2><h3 data-block-key="56acc"><b>파이콘</b></h3><p data-block-key="e7abr">파이콘은 세계 각국의 파이썬 프로그래밍 언어 커뮤니티에서 주관하는 비영리 컨퍼런스입니다.</p><p data-block-key="3kckj">한국에서는 처음으로 열린 파이콘 한국 2014를 시작으로 파이콘 한국 준비위원회는 건강한 국내 파이썬 생태계에 지속적인 보탬이 되고자, 커뮤니티 멤버들의 자발적인 봉사로 운영되고 있습니다. 2016년에는 파이콘 한국을 아시아-태평양 지역 파이썬 사용자들과 함께하는 파이콘 APAC 으로 진행하여, 더욱 다양한 참가자들과 함께 새로운 기술과 정보를 공유하고 서로 교류할 수 있는 행사가 되기를 희망합니다.</p><ul><li data-block-key="4raq3"><a href="https://www.pycon.kr/2016apac/">2016 파이콘 APAC</a></li><li data-block-key="3v7m0"><a href="https://www.pycon.kr/2015/">2015 파이콘</a></li><li data-block-key="b5ff5"><a href="https://www.pycon.kr/2014/">2014 파이콘</a></li></ul><h3 data-block-key="aokg0"><b>분기(격월) 세미나</b></h3><p data-block-key="dcrbh">국내 파이썬 사용자들의 모임을 장려하고 지식을 공유하는 자리를 만들기 위해 마련한 세미나 입니다. 분기(격월) 세미나로 진행되며 일정 및 발표자 모집 정보는 아래 링크를 통해 확인할 수 있습니다.</p><ul><li data-block-key="59oj4"><a href="http://onoffmix.com/event/85393">2016.12 격월 세미나 &amp; 송년회</a></li><li data-block-key="9hjoc"><a href="http://onoffmix.com/event/81168">2016.10 격월 세미나</a></li></ul>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+        <!-- 로고 및 설명 -->
+        <div>
+          <h2 class="text-lg font-semibold text-gray-800">Python Korea</h2>
+          <p class="text-sm text-gray-500 mt-1">
+            파이썬 한국 사용자 모임은 파이썬을 사용하는 모든 사람들을 위한 열린 커뮤니티입니다.
+          </p>
+          <p class="mt-6 pt-4 text-sm text-gray-400">
+            © 2025 Python Korea. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
